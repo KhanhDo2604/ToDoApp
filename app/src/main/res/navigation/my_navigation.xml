@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/my_navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/home">
 
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.todoapp.home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_userPage"
+            app:destination="@id/userPage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userPage"
+        android:name="com.example.todoapp.UserPage"
+        android:label="fragment_user_page"
+        tools:layout="@layout/fragment_user_page" >
+        <action
+            android:id="@+id/action_userPage_to_home2"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPage"
+        android:name="com.example.todoapp.AddPage"
+        android:label="fragment_add_page"
+        tools:layout="@layout/fragment_add_page" >
+        <action
+            android:id="@+id/action_addPage_to_home"
+            app:destination="@id/home" />
+    </fragment>
 </navigation>

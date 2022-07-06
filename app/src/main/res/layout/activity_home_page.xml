@@ -6,6 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".HomePage">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_margin="20sp"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="AutoCompleteTextView"
+                android:inputType="none"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    
+    <fragment
+        android:id="@+id/fragmentContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/my_navigation" />
+
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
         android:layout_width="match_parent"
@@ -16,7 +51,7 @@
         app:fabCradleMargin="0sp"
         android:layout_marginRight="40sp"
         android:layout_marginLeft="40sp"
-        android:layout_marginBottom="25sp">
+        android:layout_marginBottom="30sp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView"
@@ -30,15 +65,14 @@
             android:layout_marginRight="15sp"/>
     </com.google.android.material.bottomappbar.BottomAppBar>
 
-<!-- overlap -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_round_add_24"
-        app:maxImageSize="40sp"
         android:backgroundTint="@color/white"
+        android:src="@drawable/ic_round_add_24"
+        android:tint="@color/xanh_main"
         app:layout_anchor="@id/bottomAppBar"
-        android:tint="@color/xanh_main"/>
+        app:maxImageSize="40sp" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
