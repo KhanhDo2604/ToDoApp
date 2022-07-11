@@ -6,6 +6,7 @@
         <entry key="..\:/Code/ToDoApp/app/src/main/res/drawable/background_splashscreen.xml" value="0.2595" />
         <entry key="..\:/Code/ToDoApp/app/src/main/res/drawable/custom_button_white.xml" value="0.2375" />
         <entry key="..\:/Code/ToDoApp/app/src/main/res/drawable/custome_button.xml" value="0.2575" />
+        <entry key="..\:/Code/ToDoApp/app/src/main/res/drawable/item_box.xml" value="0.229" />
         <entry key="..\:/Code/ToDoApp/app/src/main/res/drawable/months.xml" value="0.236" />
         <entry key="..\:/Code/ToDoApp/app/src/main/res/layout/activity_home_page.xml" value="0.25416666666666665" />
         <entry key="..\:/Code/ToDoApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
@@ -13,6 +14,7 @@
         <entry key="..\:/Code/ToDoApp/app/src/main/res/layout/dropdown_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Code/ToDoApp/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Code/ToDoApp/app/src/main/res/layout/fragment_user_page.xml" value="0.25416666666666665" />
+        <entry key="..\:/Code/ToDoApp/app/src/main/res/layout/item_view.xml" value="0.24010416666666667" />
         <entry key="..\:/Code/ToDoApp/app/src/main/res/menu/bottom_menu.xml" value="0.25416666666666665" />
       </map>
     </option>

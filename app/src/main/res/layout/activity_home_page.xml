@@ -10,15 +10,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
-
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_margin="20sp"
             >
-
             <AutoCompleteTextView
                 android:id="@+id/autoCompleteTextView"
                 android:layout_width="match_parent"
@@ -28,8 +25,8 @@
                 android:inputType="none"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold" />
-
+                android:textStyle="bold"
+                />
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
     
@@ -52,7 +49,6 @@
         android:layout_marginRight="40sp"
         android:layout_marginLeft="40sp"
         android:layout_marginBottom="30sp">
-
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView"
             android:layout_width="wrap_content"
@@ -73,6 +69,5 @@
         android:tint="@color/xanh_main"
         app:layout_anchor="@id/bottomAppBar"
         app:maxImageSize="40sp" />
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

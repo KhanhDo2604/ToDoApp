@@ -48,5 +48,11 @@ public class HomePage extends AppCompatActivity {
         String[] months = getResources().getStringArray(R.array.months);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.dropdown_item, months);
         spinner.setAdapter(adapter);
+
+        //khung các ngày
+
+        //
+
+
     }
 }
